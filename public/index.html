@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola Mundo | DevOps</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BO59jAU6YewsGmmIOzBSSMSmc5QwDFi1Cdm42Hcps225y7sY9qsK0R12xlfL6NQM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="card-glass">
+      <div class="pill">
+        Hola Mundo · DevOps
+        <span class="badge bg-primary">Express</span>
+      </div>
+
+      <section class="hero">
+        <h1>Despliegue CI/CD sin fricción</h1>
+        <p>
+          App mínima para práctica final: Express, pruebas automatizadas, Docker y pipeline GitHub Actions hacia Docker Hub.
+        </p>
+        <div class="badges">
+          <span class="badge">Autor: Bernardo A. Gomera C.</span>
+          <span class="badge">Matrícula: 2020-9643</span>
+          <span class="badge">Stack: Node.js · Jest · Docker</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div>
+          <div class="fw-bold">Endpoint API</div>
+          <code>GET /api → { "message": "Hola Mundo" }</code>
+        </div>
+        <div>
+          <div class="fw-bold">Docker Hub</div>
+          <code>bernardogomera/practica-final-devops:latest</code>
+        </div>
+        <div>
+          <div class="fw-bold">Pipeline</div>
+          <code>push → test → build → push → deploy</code>
+        </div>
+      </section>
+
+      <div class="footer">
+        <span class="muted">Render opcional vía webhook</span>
+        <span class="tag">Listo para CI/CD</span>
+      </div>
+    </main>
+  </body>
+</html>

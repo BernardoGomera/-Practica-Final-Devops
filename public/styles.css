@@ -1,0 +1,117 @@
+:root {
+  --bg-gradient: radial-gradient(circle at 10% 20%, #e0f7ff 0, #d9e4ff 20%, #cfd7ff 40%, #b7c3ff 60%, #9fb0ff 80%, #879dff 100%);
+  --accent: #0d6efd;
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--bg-gradient);
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.card-glass {
+  width: min(960px, 100%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.15);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(12px);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e7f1ff;
+  color: var(--accent);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  margin: 12px 0 8px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badges .badge {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.panel {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0d6efd 0%, #4f46e5 100%);
+  color: #fff;
+  display: grid;
+  gap: 12px;
+}
+
+.panel code {
+  background: rgba(255, 255, 255, 0.16);
+  padding: 6px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.footer .tag {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .card-glass {
+    padding: 24px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
